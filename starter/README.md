@@ -2,7 +2,7 @@
 # Khaled Ibrahim
 
 ## Infrastructure Diagram
-![Udagram Infrastructure](./Udagram.png)
+![Udagram Infrastructure](./Udagram-Infrastructure-Diagram.png)
 
 ## Spin up instructions
 - ./create.sh udagram-netowrk-stack network.yml network-parameters.json
