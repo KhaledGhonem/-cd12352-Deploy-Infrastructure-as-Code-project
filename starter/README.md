@@ -15,4 +15,7 @@
 - ./delete.sh udagram-network-stack
 
 ## Other considerations
-The DNS name of the load balancer is [Udagram App](http://udagra-webap-i0pfs0btdbxk-377872818.us-east-1.elb.amazonaws.com/)
+I just separate s3bucket stack from udagram stack for convenience and not be too much resources inside one template and I exported the InstanceProfile in the s3bucket stack output to be used in WebAppLaunchTemplate IamInstanceProfile
+
+## LBDNS
+The DNS name of the load balancer is [Udagram](http://udagra-webap-i0pfs0btdbxk-377872818.us-east-1.elb.amazonaws.com/)
