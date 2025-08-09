@@ -1,6 +1,10 @@
 [
 	{
-		"ParameterKey": "Add you parameters here",
-		"ParameterValue": "Add you parameters here"
+		"ParameterKey": "ProjectName",
+		"ParameterValue": "udagram"
+	},
+	{
+		"ParameterKey": "S3Bucket",
+		"ParameterValue": "udagram-s3-khgh"
 	}
 ]
