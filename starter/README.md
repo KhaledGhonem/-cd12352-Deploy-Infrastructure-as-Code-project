@@ -12,7 +12,7 @@
 ## Tear down instructions
 - ./delete.sh udagram-stack
 - ./delete.sh udagram-s3bucket-stack
-- ./delete.sh udagram-netowrk-stack
+- ./delete.sh udagram-network-stack
 
 ## Other considerations
 The DNS name of the load balancer is [Udagram App](http://udagra-webap-i0pfs0btdbxk-377872818.us-east-1.elb.amazonaws.com/)
