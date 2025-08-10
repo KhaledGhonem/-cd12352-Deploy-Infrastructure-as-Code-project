@@ -39,7 +39,7 @@ Resources:
       - IpProtocol: tcp
         FromPort: 80
         ToPort: 80
-        SourceSecurityGroupId: !Ref LBSecGroup
+        CidrIp: 0.0.0.0/0
       - IpProtocol: tcp
         FromPort: 22
         ToPort: 22
@@ -97,7 +97,6 @@ Resources:
   WebAppLB:
     Type: AWS::ElasticLoadBalancingV2::LoadBalancer
     Properties:
-      Type: application
       Subnets:
       - Fn::ImportValue: !Sub "${ProjectName}-PUB1-SN"
       - Fn::ImportValue: !Sub "${ProjectName}-PUB2-SN"
@@ -131,10 +130,10 @@ Resources:
   WebAppTargetGroup:
     Type: AWS::ElasticLoadBalancingV2::TargetGroup
     Properties:
-      HealthCheckIntervalSeconds: 20
+      HealthCheckIntervalSeconds: 10
       HealthCheckPath: /
       HealthCheckProtocol: HTTP
-      HealthCheckTimeoutSeconds: 10
+      HealthCheckTimeoutSeconds: 8
       HealthyThresholdCount: 2
       Port: 80
       Protocol: HTTP
